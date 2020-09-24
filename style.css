@@ -240,7 +240,7 @@ footer .business .content .partner-logo img
         left: 0;
         padding:3vh 20px 3vh 20px;
         width: 60%;
-        height:200vh;
+        height:200rem;
         background-color: white;
         display:none;
     }
@@ -251,7 +251,7 @@ footer .business .content .partner-logo img
 
     .navbar-collapse.show {
         left: 0;
-        transition: left 500ms ease-in-out;
+        transition: left 350ms ease-in-out;
     }
 
     .navbar-toggler.collapsed ~ .navbar-collapse {
