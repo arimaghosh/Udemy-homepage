@@ -4,6 +4,14 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+a
+{
+    cursor: pointer;
+}
+body
+{
+    padding-right: 0 !important
+}
 #mobile-nav
 {
     display: none;
@@ -15,13 +23,6 @@
 .navbar-toggler:focus
 {
     outline:none;
-}
-#close
-{
-    position: absolute;
-    right:30%;
-    top:20px;
-    display: none;
 }
 
 .banner
@@ -227,37 +228,72 @@ footer .business .content .partner-logo img
     {
         margin-right:1rem;
     }
-    #mobile-nav a
-    {
-        color:#29303b;
-    }
-    .navbar-toggler.collapsed ~ .navbar-collapse {
-        transition: left 500ms ease-in-out;
-    }
-    .navbar-collapse {
-        position: absolute;
-        top: 0px; 
-        left: 0;
-        padding:3vh 20px 3vh 20px;
-        width: 60%;
-        height:200rem;
-        background-color: white;
-        display:none;
-    }
-    .navbar-collapse.collapsing {
-        left: -75%;
-        transition: height 0s ease;
-    }
+    .modal-dialog
+{
+    max-width:100%;
+    padding:0;
+    margin:0;
+    height:5rem;
+}
 
-    .navbar-collapse.show {
-        left: 0;
-        transition: left 350ms ease-in-out;
-    }
-
-    .navbar-toggler.collapsed ~ .navbar-collapse {
-        transition: left 500ms ease-in-out;
-    }
-
+.sidenav {
+    height: 100%; 
+    width: 0;
+    position: fixed; 
+    z-index: 1050; 
+    top: 0;
+    left: 0;
+    background-color: #f1f1f1;
+    overflow-x: hidden; 
+    padding-top: 6px; 
+    transition: 0.3s;
+  }
+  .sidenav a {
+    padding: 6px 8px 8px 16px;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    transition: 0.1s;
+  }
+  .closebtn i{
+    position: absolute;
+    top: 0.5rem;
+    left:18rem;
+    margin-left: 20px;
+    transition:0.3s;
+    padding:1rem;
+    width:50px;
+    height:50px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+  }
+  .sidenav .log
+  {
+      color:#007791;
+  }
+  .sidenav .log,.sidenav .popular
+  {
+      padding-bottom:4px;
+      border-bottom:1px solid rgba(0,0,0,0.2);
+      
+     
+  }
+  .sidenav .popular,.sidenav .contact
+  {
+    padding-top: 12px;
+    color:#29303b;
+  }
+  .sidenav .popular span,.sidenav .contact span
+  {
+      padding-left: 14px;
+      font-weight: bold;
+      font-size: 0.8rem;
+  }
+  .sidenav .contact
+  {
+      padding-bottom: 2.5rem;
+  }
+    
 }
 @media screen and (max-width:750px)
 {

@@ -65,56 +65,51 @@
       </ul>
     </div>
   </nav>
-  <nav class="navbar navbar-expand-md p-2 navbar-light bg-light" id="mobile-nav">
-    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fas fa-bars" style="color:#29303b;"></i>
-    </button>
+  <nav class="navbar p-2"id="mobile-nav">
+     <a onclick="openNav()" style="cursor: pointer;"><i class="fas fa-bars pl-2" style="font-size:1.2rem;color:#29303b;"></i></a>
     <a class="navbar-brand mx-auto" href="#"><img alt="Udemy" class="ufb-logo" src="https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg" width="90" height="32"></a>
     <div class="icons">
-      <a class="search" id="search-icon"><i class="fas fa-search"></i></a>
-      <a class="shop" href="index.html"><i class="fas fa-shopping-cart"></i></a>
+      <a class="search" data-toggle="modal" data-target="#search-icon" style="color:#29303b;"><i class="fas fa-search"></i></a>
+      <a class="shop" href="index.html"><i class="fas fa-shopping-cart" style="color:#29303b;"></i></a>
     </div>
-    <div class="close">
-      <i id ="close" class="fas fa-times"></i>
+    <div class="modal fade" id="search-icon" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-body">
+            <i class="fas fa-search pt-1" style="font-size:20px;"></i>
+            <input style="width:70%;outline:none;border:none; padding-left:2rem;"type="text" placeholder="Search for anything">
+            <i class="fas fa-times float-right pt-1" style="font-size:24px; cursor: pointer;" data-dismiss="modal"></i>
+          </div>
+        </div>
+      </div>
     </div>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item ">
-            <a class="nav-link" href="#">Log in</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Sign-up</a>
-          </li>
-          <p>Most Popular</p>
-          <li class="nav-item ">
-            <a class="nav-link" href="#">Web Development</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="#">Mobile Apps</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="#">Game Development</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="#">Finance</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="#">Entrepreneurship</a>
-          </li>
-          <p>More from Udemy</p>
-          <li class="nav-item ">
-            <a class="nav-link" href="#">Udemy for business</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="#">Get the App</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="#">Invite Friends</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="#">Help</a>
-          </li>
-        </ul>
+    <a href="javascript:void(0)" class="closebtn text-decoration-none" onclick="closeNav()"><i class="fas fa-times pl-3 mt-2" style="cursor: pointer;font-size: 24px; color:#29303b;"></i></a>
+      <div id="mySidenav" class="sidenav">
+          <div class="log">
+            <a>Log in</a>
+            <a>Sign up</a>
+          </div>
+          <div class="popular">
+            <span>Most Popular</span>
+            <a>Web Developmen</a>
+            <a>Mobile App</a>
+            <a>Game Development</a>
+            <a>Finance</a>
+            <a>Entrepreneurship</a>
+            <a>Data & Analytics</a>
+            <a>Digital Marketing</a>
+            <a>Graphic Design </a>
+            <a>IT Certification</a>
+            <a>Personal Transformation</a>
+            <a>All Categories</a>
+          </div>
+          <div class="contact">
+            <span>More from Udemy</span>
+            <a>Udemy for business</a>
+            <a>Get the app</a>
+            <a>Invite Friends</a>
+            <a>Help</a>
+          </div>
       </div>
   </nav>
   </header>
