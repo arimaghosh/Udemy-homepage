@@ -9,7 +9,6 @@ $('.modal').on('hide.bs.modal', function () {
   $("html").css('overflow-y', 'auto');
 });
 
-/* Set the width of the side navigation to 250px */
 function openNav() {
   document.getElementById("mySidenav").style.width = "300px";
   setTimeout(function(){
@@ -20,7 +19,6 @@ function openNav() {
   document.body.style.backgroundColor = "rgba(0,0,0,0.5)";
 }
 
-/* Set the width of the side navigation to 0 */
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   $(".closebtn").hide();
