@@ -1,0 +1,324 @@
+*, html, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+#mobile-nav
+{
+    display: none;
+}
+.navbar-toggler
+{
+    border:none;
+}
+.navbar-toggler:focus
+{
+    outline:none;
+}
+#close
+{
+    position: absolute;
+    right:30%;
+    top:20px;
+    display: none;
+}
+
+.banner
+{
+    background: transparent url(https://s.udemycdn.com/mobile/default-banner.jpg) center top no-repeat;
+    color:white;
+    padding-bottom: 12rem;
+}
+.banner h1
+{
+    padding: 4.5rem 2.5rem 4.5rem 2.5rem;
+    font-weight:100;
+    font-size:3rem;
+}
+.banner .list 
+{
+    padding:1.2rem 4rem 1.2rem 4rem;
+    margin-bottom:0.2rem;
+    font-size:1.4rem;
+    width:50%;
+}
+.banner .list ul
+{
+    padding-left:1.5rem;
+}
+.banner .app-link
+{
+    padding-left:5rem;
+}
+footer .business
+{
+    font-size:1.2rem;
+    font-weight: bold;
+    border-bottom:1px solid grey;
+}
+footer .business .content
+{
+    padding: 1rem 2.7rem 0.5rem 2.7rem;
+    margin-top:0.5rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+footer .business .content .text
+{
+    width:40%;
+    line-height: 1;
+}
+footer .business .content .partner-logo
+{
+    margin-left:10rem;
+}
+footer .business .content .partner-logo img
+{
+    margin-left:9px;
+}
+footer li a
+{
+    font-size:0.9rem;
+    color:#007791;
+}
+footer a
+{
+    color:#007791;
+}
+footer a:hover
+{
+    color:#29303b;
+}
+footer .links
+{
+    padding: 1rem 2.7rem 1.5rem 2.7rem;
+}
+
+footer li
+{
+    padding-bottom:0.3rem;
+}
+.footer-cr
+{
+    padding: 2rem 2.7rem 2rem 2.7rem;
+}
+.footer-cr p
+{
+    font-size:0.7rem;
+    color:grey;
+}
+.custom-select
+{
+    width:15rem;
+    height:2.5rem;
+    font-size:0.9rem;
+    border:1px solid #000000;
+}
+.custom-select:focus
+{
+    outline:none;
+    box-shadow: none;
+    border:1px solid #000000;
+}
+nav .nav-item
+{
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+}
+.nav-item .form-control
+{
+    width:25rem;
+    border-radius: 50px;
+    border: 1px solid #29303b;
+}
+nav .nav-link
+{
+    font-size:0.9rem;
+    color:#29303b;
+}
+.btn
+{
+    width:6rem;
+    font-weight: bold;
+}
+.signup
+{
+    background-color: #007791;
+}
+.login
+{
+    border: 1px solid #007791;
+}
+.btn:focus
+{
+    outline:none;
+    box-shadow: none; 
+}
+
+@media screen and (max-width:1200px)
+{
+    footer .business .content
+{
+    padding: 1rem 2rem 1rem 2rem;
+    margin-top:0.5rem;
+    display:flex;
+    flex-direction: column;
+}
+#business
+{
+    display:none;
+}
+footer .business .content .text
+{
+    width:100%;
+}
+footer .business .content .partner-logo
+{
+    margin-left:0;
+}
+footer .business .content .partner-logo img
+{
+    margin-left:9px;
+}
+.banner
+{
+    padding-bottom: 5rem;
+}
+.nav-item .form-control
+{
+    width:20rem;
+}
+}
+@media screen and (max-width:992px)
+{
+    .banner
+{
+    padding-bottom: 2rem;
+}
+#teach
+{
+    display:none;
+}
+.nav-item .form-control
+{
+    width:15rem;
+}
+.banner h1
+{
+    font-size:2.2rem;
+}
+}
+@media screen and (max-width:768px)
+{
+    #desktop-nav
+    {
+        display:none;
+    }
+    #mobile-nav
+    {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #mobile-nav .icons .search,#mobile-nav .icons .shop
+    {
+        margin-right:1rem;
+    }
+    #mobile-nav a
+    {
+        color:#29303b;
+    }
+    .navbar-toggler.collapsed ~ .navbar-collapse {
+        transition: left 500ms ease-in-out;
+    }
+    .navbar-collapse {
+        position: absolute;
+        top: 0px; 
+        left: 0;
+        padding:3vh 20px 3vh 20px;
+        width: 60%;
+        height: 100vh;
+        background-color: white;
+        display:none;
+    }
+    .navbar-collapse.collapsing {
+        left: -75%;
+        transition: height 0s ease;
+    }
+
+    .navbar-collapse.show {
+        left: 0;
+        transition: left 500ms ease-in-out;
+    }
+
+    .navbar-toggler.collapsed ~ .navbar-collapse {
+        transition: left 500ms ease-in-out;
+    }
+
+}
+@media screen and (max-width:750px)
+{
+    .banner
+{
+    background: #00576b;
+    text-align: center;
+}
+.banner h1
+{
+    padding: 2rem 0.5rem 2rem 0.5rem;
+    font-size: 1.9rem;
+}
+.banner .list 
+{
+    padding:1rem;
+    margin-bottom:0.2rem;
+    font-size:1.2rem;
+    width:100%;
+}
+.banner .list ul
+{
+    padding-left:0;
+    list-style: none;
+}
+.banner .app-link
+{
+    padding-left:0;
+}
+footer .links
+{
+    padding:0 1.2rem 1.2rem 1.2rem;
+}
+#first {
+    order: 1;
+    margin-bottom: 0.5rem;
+}
+#second {
+    order: 2;
+}
+#third {
+    order: 3;
+}
+#fourth {
+    order: 4;
+}
+.footer-cr
+{
+    padding:0.5rem 1.2rem 0.5rem 1.2rem;
+}
+.footer-cr p
+{
+    font-size:0.7rem;
+    margin-top: 1rem;
+    color:grey;
+}
+footer .business .content .partner-logo img
+{
+    margin-right:3px;
+    margin-left: 0;
+    margin-top: 18px;
+}
+
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udemy App</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md p-3 bg-light" id="desktop-nav">
+    <a class="navbar-brand d-flex" href="#"><img alt="Udemy" class="ufb-logo" src="https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg" width="110" height="32"></a>
+    <div class="d-flex justify-lg-content-end">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Categories
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="business" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Udemy for business
+          </a>
+          <div class="dropdown-menu" aria-labelledby="business">
+            <a class="dropdown-item" href="#">Details</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="teach" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Teach on Udemy
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        <li class="nav-item">
+          <button type="button"class="btn nav-link login" style="color: #007791;">Log in</button>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="btn nav-link signup" style="color:white;">Sign up</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-md p-2 navbar-light bg-light" id="mobile-nav">
+    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars" style="color:#29303b;"></i>
+    </button>
+    <a class="navbar-brand mx-auto" href="#"><img alt="Udemy" class="ufb-logo" src="https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg" width="90" height="32"></a>
+    <div class="icons">
+      <a class="search" id="search-icon"><i class="fas fa-search"></i></a>
+      <a class="shop" href="index.html"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+    <div class="close">
+      <i id ="close" class="fas fa-times"></i>
+    </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="#">Log in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sign-up</a>
+          </li>
+          <p>Most Popular</p>
+          <li class="nav-item ">
+            <a class="nav-link" href="#">Web Development</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#">Mobile Apps</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#">Game Development</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#">Finance</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#">Entrepreneurship</a>
+          </li>
+          <p>More from Udemy</p>
+          <li class="nav-item ">
+            <a class="nav-link" href="#">Udemy for business</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#">Get the App</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#">Invite Friends</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#">Help</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+  </header>
+    
+    <div class="banner">
+      <h1 class="text-center">Learn anywhere with Udemy for iOS and Android</h1>
+      <div class="list">
+        <p class="mb-1"> With the Udemy app you can:</p>
+        <ul>
+          <li>Explore 130,000+ courses</li>
+          <li>Download courses to watch offline</li>
+          <li>Listen to courses with podcast-style audio</li>
+          <li>Watch courses with Chromecast or Apple TV</li>
+        </ul>
+      </div>
+        <div class="app-link">
+          <a href="https://udemy.app.link/garBkjjtDO"><img alt="Udemy in Google Play" width="168" height="65"  src="https://img-b.udemycdn.com/app_store_logos/en_us/google-btn.png"></a>
+          <a href="https://udemy.app.link/garBkjjtDO"><img alt="Udemy in App Store" style="margin:2px; height:45px;"src="https://img-b.udemycdn.com/app_store_logos/en_us/apple-btn.svg"></a>
+        </div>
+      </div>
+
+    <footer>
+      <div class="business">
+         <div class="content">
+            <div class="text">
+              <p>Top companies choose <a href="#" class="text-decoration-none ">Udemy for Business</a> to build in-demand career skills.</p>
+            </div>
+            <div class="partner-logo">
+                <img alt="Lyft" height="24" width="34" src="https://s.udemycdn.com/partner-logos/lyft-logo.svg">
+                <img alt="adidas" height="24" width="36" src="https://s.udemycdn.com/partner-logos/adidas-logo.svg">
+                <img alt="Eventbrite" height="18" width="99" src="https://s.udemycdn.com/partner-logos/eventbrite-logo.svg">
+                <img alt="Surveymonkey" height="24" width="157" src="https://s.udemycdn.com/partner-logos/surveymonkey-logo.svg">
+                <img alt="Booking" height="24" width="140" src="https://s.udemycdn.com/partner-logos/booking-logo.svg">
+            </div>
+          </div>
+        </div>
+      <div class="links">
+    <div class="container-fluid">
+    <div class="row pt-4">
+      <div class="col-md-3 p-0 " id="second">
+        <ul class="list-unstyled mb-0">
+          <li><a class="text-decoration-none "  href="#!">Udemy for business</a></li>
+          <li><a class="text-decoration-none " href="#!">Teach on Udemy</a></li>
+          <li><a class="text-decoration-none " href="#!">Get the app</a></li>
+          <li><a class="text-decoration-none " href="#!">About us</a></li>
+          <li><a class="text-decoration-none " href="#!">Contact us</a></li>
+        </ul>
+      </div>     
+      <div class="col-md-3 p-0 " id="third">
+        <ul class="list-unstyled mb-0">
+          <li><a class="text-decoration-none " href="#!">Careers</a></li>
+          <li><a class="text-decoration-none " href="#!">Blog</a></li>
+          <li><a class="text-decoration-none " href="#!">Help and Support</a></li>
+          <li><a class="text-decoration-none " href="#!">Affiliate</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 p-0 " id="fourth">
+        <ul class="list-unstyled mb-0">
+          <li><a class="text-decoration-none " href="#!">Terms</a></li>
+          <li><a class="text-decoration-none " href="#!">Privacy policy and cookie policy</a></li>
+          <li><a class="text-decoration-none " href="#!">Sitemap</a></li>
+          <li><a class="text-decoration-none " href="#!">Featured courses</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-3 p-0 d-flex justify-lg-content-end" id="first">
+          <select class="custom-select ">
+          <option selected value="en_US">English</option>
+          <option value="de_DE">Deutsch</option>
+          <option value="es_ES">Español</option>
+          <option value="fr_FR">Français</option>
+          <option value="id_ID">Bahasa Indonesia</option>
+          <option value="it_IT">Italiano</option>
+          <option value="ja_JP">日本語</option>
+          <option value="ko_KR">한국어</option>
+          <option value="nl_NL">Nederlands</option>
+          <option value="pl_PL">Polski</option>
+          <option value="pt_BR">Português</option>
+          <option value="ro_RO">Română</option>
+          <option value="ru_RU">Русский</option>
+          <option value="th_TH">ภาษาไทย</option>
+          <option value="tr_TR">Türkçe</option>
+          <option value="zh_CN">中文(简体)</option>
+          <option value="zh_TW">中文(繁體)</option> 
+          </select>
+      </div>
+      </div>
+      </div>
+    </div>
+  <div class="footer-cr">
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+        <div class="col-sm-6 p-0">
+          <a href=""><img alt="Udemy" class="ufb-logo" src="https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg" width="110" height="32"></a>
+        </div>
+        <div class="col-sm-6 p-0 d-flex justify-content-lg-end">
+          <p>© 2020 Udemy, Inc.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  </body>
+</html>
