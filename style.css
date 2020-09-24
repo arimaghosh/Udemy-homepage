@@ -126,8 +126,8 @@ footer li
 }
 nav .nav-item
 {
-    padding-left: 0.3rem;
-    padding-right: 0.3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 .nav-item .form-control
 {
@@ -140,7 +140,7 @@ nav .nav-link
     font-size:0.9rem;
     color:#29303b;
 }
-.btn
+nav .btn
 {
     width:6rem;
     font-weight: bold;
@@ -158,6 +158,37 @@ nav .nav-link
     outline:none;
     box-shadow: none; 
 }
+.display-business,.display-teach,.display-shop
+{
+    width:300px;
+    height:150px;
+    position:absolute;
+    left:41%;
+    background-color:white;
+    padding:1rem;
+}
+.display-teach
+{
+    left:52%;
+}
+.display-business p,.display-teach p  
+{
+    font-size: 1.2rem;
+    line-height:1;
+    font-weight: bold;
+}
+.display-business .btn,.display-teach .btn
+{
+    color:white;
+    background-color: #007791;
+    margin-top:1rem;
+    font-weight: bold;
+}
+.display-shop
+{
+    height:100px;
+    left:55.5%;
+}
 
 @media screen and (max-width:1200px)
 {
@@ -168,7 +199,7 @@ nav .nav-link
     display:flex;
     flex-direction: column;
 }
-#business
+.udemy-business
 {
     display:none;
 }
@@ -199,7 +230,7 @@ footer .business .content .partner-logo img
 {
     padding-bottom: 2rem;
 }
-#teach
+.udemy-teach
 {
     display:none;
 }
